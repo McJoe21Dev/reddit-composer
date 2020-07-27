@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Reddit Composer - Make Reddit message template link</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <script src="main.js"></script>
+  <div class="about_">
+  <h1>Reddit Compose Link</h1>
+  <h3>Fill in the form and it will give you a pre-fill message link to hyperlink in a post or comments <a href="https://reddit.com/r/reddit.com/w/markdown">Reddit Markdown</a></h3></div>
+  <form>
+    <label>To:</label><br/>
+    <input id='to' value='r/modmail'><br/>
+    <label>Subject:</label><br/>
+    <input id='subject' value='Your Subject'><br/>
+    <label>Body: </label><br/>
+    <textarea id='body'>Sample message</textarea><br/><br/>
+    <input type="button" onclick="goform()" value="Generate Link"><br/>
+    <a id="link" target="_blank"><input type="button" value="Open Link"></a><br/><br/><br/>
+    <label>Result (Browser Link):</label><br/>
+    <input id="result"></input><br/>
+    <label>Result (Hyperlink):</label><br />
+    <input id="result2"></input><br/>
+    </form>
+    <p class="credits">2020 McJoe21.com</p>
+</body>
+</html>
